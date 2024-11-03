@@ -1,0 +1,421 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /myzfsuser/bluestone/src/github/bash-completion-describeproc
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 18
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 840
+    content: "\e[?2004h<999 rseward >"
+  - delay: 2536
+    content: p
+  - delay: 119
+    content: s
+  - delay: 140
+    content: ' '
+  - delay: 132
+    content: '-'
+  - delay: 59
+    content: e
+  - delay: 246
+    content: f
+  - delay: 138
+    content: ' '
+  - delay: 769
+    content: '|'
+  - delay: 229
+    content: ' '
+  - delay: 193
+    content: g
+  - delay: 246
+    content: r
+  - delay: 210
+    content: e
+  - delay: 106
+    content: p
+  - delay: 109
+    content: ' '
+  - delay: 107
+    content: e
+  - delay: 236
+    content: m
+  - delay: 81
+    content: a
+  - delay: 239
+    content: c
+  - delay: 184
+    content: s
+  - delay: 82
+    content: "\r\n\e[?2004l\r"
+  - delay: 45
+    content: "rseward   139137   13235  0 Oct28 pts/6    00:01:11 \e[01;31m\e[Kemacs\e[m\e[K kubernetes.el\r\nrseward   140092   10205  0 Oct28 pts/6    00:09:25 \e[01;31m\e[Kemacs\e[m\e[K --load=pva.el\r\nrseward   140093   10205  0 Oct28 pts/6    00:02:11 \e[01;31m\e[Kemacs\e[m\e[K --load=kubernetes.el\r\nrseward  3218611 3218402  0 11:15 pts/38   00:00:00 grep --color=auto \e[01;31m\e[Kemacs\e[m\e[K\r\n\e[?2004h<1000 rseward >"
+  - delay: 1920
+    content: d
+  - delay: 201
+    content: e
+  - delay: 192
+    content: s
+  - delay: 264
+    content: c
+  - delay: 206
+    content: r
+  - delay: 120
+    content: i
+  - delay: 345
+    content: b
+  - delay: 921
+    content: e
+  - delay: 286
+    content: 'proc '
+  - delay: 2313
+    content: '1'
+  - delay: 575
+    content: '3'
+  - delay: 345
+    content: '9'
+  - delay: 387
+    content: "\a"
+  - delay: 269
+    content: "\a"
+  - delay: 743
+    content: ' '
+  - delay: 200
+    content: ' '
+  - delay: 1824
+    content: '#'
+  - delay: 194
+    content: ' '
+  - delay: 550
+    content: 'N'
+  - delay: 234
+    content: o
+  - delay: 198
+    content: ' '
+  - delay: 151
+    content: t
+  - delay: 321
+    content: a
+  - delay: 168
+    content: b
+  - delay: 235
+    content: ' '
+  - delay: 205
+    content: c
+  - delay: 127
+    content: o
+  - delay: 160
+    content: m
+  - delay: 179
+    content: p
+  - delay: 113
+    content: l
+  - delay: 132
+    content: e
+  - delay: 258
+    content: t
+  - delay: 101
+    content: i
+  - delay: 232
+    content: o
+  - delay: 136
+    content: 'n'
+  - delay: 168
+    content: ' '
+  - delay: 865
+    content: 'y'
+  - delay: 103
+    content: e
+  - delay: 233
+    content: t
+  - delay: 313
+    content: '!'
+  - delay: 472
+    content: "\r\n\e[?2004l\r"
+  - delay: 47
+    content: "cat: /proc/139/cmdline: No such file or directory\r\ncmd: \r\nrealpath: /proc/139/cwd: No such file or directory\r\ncwd: \r\n\r\n"
+  - delay: 126
+    content: "\r\n"
+  - delay: 225
+    content: "\e[?2004h<1001 rseward >"
+  - delay: 8190
+    content: .
+  - delay: 168
+    content: ' '
+  - delay: 1539
+    content: d
+  - delay: 504
+    content: "\b\e[K"
+  - delay: 200
+    content: "\b\e[K"
+  - delay: 197
+    content: "\b\e[K"
+  - delay: 234
+    content: "\a"
+  - delay: 230
+    content: l
+  - delay: 138
+    content: s
+  - delay: 264
+    content: "\r\n\e[?2004l\rconfig.yml   \e[0m\e[01;32mdescribeproc\e[0m                  describeproc.yml  README.md\r\n\e[00;90mconfig.yml~\e[0m  describeproc-completion.bash  LICENSE           \e[00;90mREADME.md~\e[0m\r\n\e[?2004h<1002 rseward >"
+  - delay: 762
+    content: .
+  - delay: 139
+    content: ' '
+  - delay: 743
+    content: d
+  - delay: 237
+    content: e
+  - delay: 226
+    content: s
+  - delay: 226
+    content: c
+  - delay: 206
+    content: "\aribeproc"
+  - delay: 926
+    content: '-'
+  - delay: 224
+    content: c
+  - delay: 128
+    content: o
+  - delay: 232
+    content: m
+  - delay: 84
+    content: 'pletion.bash '
+  - delay: 1564
+    content: "\r\n\e[?2004l\r\e[?2004h<1003 rseward >"
+  - delay: 2110
+    content: '. describeproc-completion.bash '
+  - delay: 760
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[Cls\e[K"
+  - delay: 650
+    content: "\b\bdescribeproc 139  # No tab completion yet!"
+  - delay: 1520
+    content: "\b\e[K"
+  - delay: 499
+    content: "\b\e[K"
+  - delay: 29
+    content: "\b\e[K"
+  - delay: 32
+    content: "\b\e[K"
+  - delay: 29
+    content: "\b\e[K"
+  - delay: 33
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 27
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 33
+    content: "\b\e[K"
+  - delay: 26
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 32
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 27
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 32
+    content: "\b\e[K"
+  - delay: 236
+    content: "\b\e[K"
+  - delay: 191
+    content: "\b\e[K"
+  - delay: 455
+    content: '137 '
+  - delay: 2199
+    content: '|'
+  - delay: 264
+    content: ' '
+  - delay: 330
+    content: h
+  - delay: 70
+    content: e
+  - delay: 244
+    content: a
+  - delay: 237
+    content: d
+  - delay: 1707
+    content: "\r\n\e[?2004l\r"
+  - delay: 42
+    content: "cmd: emacs kubernetes.el \r\ncwd: /myzfsuser/rseward/emacs/bluestone\r\n\r\n"
+  - delay: 124
+    content: "emacs---5*[{emacs}]\r\n\r\n"
+  - delay: 231
+    content: "COMMAND    PID    USER   FD      TYPE             DEVICE SIZE/OFF     NODE NAME\r\nemacs   139137 rseward  cwd       DIR               0,41       19 12567281 /myzfsuser/rseward/emacs/bluestone\r\nemacs   139137 rseward  rtd       DIR               0,33      240      256 /\r\nemacs   139137 rseward  txt       REG               0,33  8885024 15530252 /usr/bin/emacs-29.4-gtk+x11\r\nemacs   139137 rseward  mem       REG               0,31          15530252 /usr/bin/emacs-29.4-gtk+x11 (path dev=0,33)\r\n\e[?2004h<1004 rseward >"
+  - delay: 2738
+    content: '#'
+  - delay: 152
+    content: ' '
+  - delay: 363
+    content: T
+  - delay: 192
+    content: a
+  - delay: 109
+    content: b
+  - delay: 186
+    content: ' '
+  - delay: 103
+    content: c
+  - delay: 327
+    content: m
+  - delay: 337
+    content: "\b\e[K"
+  - delay: 266
+    content: o
+  - delay: 245
+    content: m
+  - delay: 208
+    content: p
+  - delay: 96
+    content: l
+  - delay: 178
+    content: e
+  - delay: 264
+    content: t
+  - delay: 94
+    content: i
+  - delay: 216
+    content: o
+  - delay: 177
+    content: 'n'
+  - delay: 154
+    content: ' '
+  - delay: 253
+    content: 'n'
+  - delay: 200
+    content: o
+  - delay: 465
+    content: w
+  - delay: 414
+    content: '!'
+  - delay: 896
+    content: "\r\n\e[?2004l\r\e[?2004h<1005 rseward >"
+  - delay: 1647
+    content: "\e[?2004l\r\r\nlogout\r\n\e[H\e[J\e[3J"
