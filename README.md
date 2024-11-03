@@ -22,6 +22,8 @@ of the bash completion script just a little bit better.
 Lazarus if you are reading this, please feel free to steal my script. Your original blog
 post is super informative and helped me have a better understanding of the topic.
 
+![terminalizer recording](recording/demo.gif)
+
 # References
 
 ## The original blog post and it's github page:
