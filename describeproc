@@ -1,0 +1,30 @@
+
+# Nice tutorial on writing bash completion for scripts
+# https://github.com/iridakos/bash-completion-tutorial
+# Official GNU Bash resource page:
+# https://www.gnu.org/software/bash/manual/html_node/A-Programmable-Completion-Example.html
+# https://github.com/scop/bash-completion/
+
+# The tutorial script uses fc which seemingly can NOT access the shell's history
+# easily. My example digs out ps info out of the proc dir for a running process
+
+if [ -z "$1" ]; then
+  echo "No process number passed"
+  exit 2
+fi
+
+procno=$1
+exists="$(ps -e -o pid= | grep $procno -- 2>/dev/null)"
+
+#echo "procno=$1 exists=$exists"
+
+if [ -n "$exists" ]; then
+  printf "cmd: %b\n" "$(cat /proc/$procno/cmdline | tr \\0 \ )"
+  printf "cwd: %s\n\n" "$(realpath /proc/$procno/cwd)"
+  pstree $procno
+  printf "\n"
+  lsof -p $procno
+else
+  echo "Process with number $procno was not found!"
+  exit 2
+fi
